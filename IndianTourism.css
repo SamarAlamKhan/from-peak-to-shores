@@ -366,7 +366,7 @@ h2 {
     }
 
     .peak-text-container {
-        font-size: 10px;
+        font-size: 15px;
         width: 80vw;
         margin-bottom: 25%;
         margin-left: 10vw;
@@ -394,7 +394,7 @@ h2 {
     .hero {
         height: 25%;
         padding: 0.5rem;
-        font-size: 10px;
+        font-size: 15px;
         width: 85%;
     }
     
@@ -537,4 +537,5 @@ h2 {
     .thumbnail-slider {
         height: 45%;
     }
+
 }
