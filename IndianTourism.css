@@ -368,6 +368,8 @@ h2 {
     .peak-text-container {
         font-size: 15px;
         width: 80vw;
+        height: 25%;
+        overflow-y: auto;
         margin-bottom: 25%;
         margin-left: 10vw;
         margin-right: 10vw;
@@ -539,3 +541,4 @@ h2 {
     }
 
 }
+
