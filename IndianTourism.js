@@ -1,5 +1,5 @@
-const deviceMobile = window.matchMedia('(orientation: portrait) and (max-width: 575.98px)').matches;
-const deviceTablet = window.matchMedia('(min-width: 576px) and (max-width: 1400px)').matches;
+const deviceMobile = window.matchMedia('(orientation: portrait) and (max-width: 767.98px)').matches;
+const deviceTablet = window.matchMedia('(min-width: 768px) and (max-width: 1400px)').matches;
 
 const imageUrls = [
     "./Assets/Phone/Peaks_Cover_L1.jpg",
@@ -96,12 +96,12 @@ const thumbWidth = (((thumbnailSlider.clientWidth) * 2.45) / 9) - 55;
 thumbs.forEach((thumb) => {
 
     let index = Array.from(thumbs).indexOf(thumb);
+    let title = thumb.getAttribute('data-title');
 
-    if(!deviceMobile || !deviceTablet) {
+    if(!deviceMobile) {
             thumb.addEventListener('mouseover', () => {
 
                 thumb.style.transform = `scale(1.3)`;
-                let title = thumb.getAttribute('data-title');
                 if(index == 0) {
                     thumbs[index+1].style.transform = `scale(1.1)`;    
                 } else if(index == totalThumbs) {
