@@ -304,8 +304,119 @@ h2 {
     border-radius: inherit;
 }
 
+.food-container {
+    width: 100%;
+    height: 100vh;
+    /* background-color: violet; */
+}
 
-@media screen and (orientation: portrait) and (max-width: 767.98px) {
+.food-heading {
+    color: black;
+}
+
+
+.food-content {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    /* padding: 0 1.5rem; */
+    /* background-color: aqua; */
+}
+
+.food-images {
+    height: 95%;
+    aspect-ratio: 1/1;
+    /* background-color: orangered; */
+    display: grid;
+    gap: 1rem;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    padding: 1rem;
+}
+
+.item {
+    border-radius: 8%;
+    background-size: cover;
+}
+
+.palak-paneer {
+    background-image: url(./Assets/Palak_Paneer_Sq1.jpg);
+}
+
+.dosa {
+    background-image: url(./Assets/Dosa_Sq1.jpg);
+}
+
+.roshogulla {
+    background-image: url(./Assets/Roshogulla_Sq2.jpg);
+}
+
+.nihari {
+    background-image: url(./Assets/Nihari_Sq1.jpg);
+}
+
+.biryani {
+    background-image: url(./Assets/Biryani_Sq3.jpg);
+}
+
+.butter-chicken {
+    background-image: url(./Assets/Butter_Chicken_Sq2.jpg);
+}
+
+.chhole-bhatoore {
+    background-image: url(./Assets/Chhole_Bhatoore_Sq1.jpg);
+}
+
+.lassi {
+    background-image: url(./Assets/Lassi_Sq1.png);
+}
+
+.samosa {
+    background-image: url(./Assets/Samosa_Sq1.jpg);
+}
+
+.food-text {
+    flex: 1;
+    height: 97%;
+    /* background-color: deeppink; */
+    text-align: justify;
+    padding-right: 1rem;
+}
+
+.food-inner-text {
+    width: 96%;
+    height: 94%;
+    /* background-color: red; */
+    border: 2px solid greenyellow;
+    border-radius: 2%;
+    padding: 1rem;
+    font-size: 20px;
+}
+
+.food-hero-image {
+    width: 32%;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    background-image: url(./Assets/Indian_Platter_Sq1.jpg);
+    border-radius: 5%;
+    float: left;
+    margin-right: 1rem;
+}
+
+.food-article-heading {
+    margin-bottom: 1rem;
+    font-size: 30px;
+}
+
+.yt-link {
+    width: auto;
+    height: auto;
+    background-color: seagreen;
+}
+
+@media screen and (orientation: portrait) and (max-width: 768px) {
     .main-image {
         height: 100vh;
         position: relative;
@@ -367,9 +478,9 @@ h2 {
 
     .peak-text-container {
         font-size: 15px;
-        width: 80vw;
         height: 25%;
         overflow-y: auto;
+        width: 80vw;
         margin-bottom: 25%;
         margin-left: 10vw;
         margin-right: 10vw;
@@ -391,8 +502,6 @@ h2 {
         background-image: url(./Assets/Taj_Mahal_P2.png);
     }
 
-
-
     .hero {
         height: 25%;
         padding: 0.5rem;
@@ -413,6 +522,7 @@ h2 {
     .thumbnail-slider {
         width: 90%;
         height: 25%;
+        gap: 2rem;
         scrollbar-width: none;
     }
 
@@ -472,73 +582,3 @@ h2 {
         background-size: cover;
     }
 }
-
-@media (min-width: 768px) and (max-width: 1400px) {
-    .main-image {
-        height: 100vh;
-    }
-
-    .headings {
-        height: auto;
-        padding: 1rem 0;
-    }
-
-    .Peaks {
-        width: 100%;
-        height: 100vh;
-    }
-
-    .peak-text-container {
-        height: 40%;
-        overflow-y: auto;
-        margin-top: 250px;
-        margin-right: 50px;
-    }
-    
-    .peak-intro {
-        background-image: url(./Assets/Tablets/Peaks_Cover_L1.jpg);
-        background-size: cover;
-    }
-
-    .kanchenjunga {
-        background-image: url(./Assets/Tablets/Kanchenjunga_L3.jpg);
-        background-size: cover;
-    }
-
-    .nanda-devi {
-        background-image: url(./Assets/Tablets/Nanda_Devi_L1.jpg);
-        background-size: cover;
-    }
-
-    .mount-nun {
-        background-image: url(./Assets/Tablets/Mount_Nun_L1.jpg);
-        background-size: cover;
-    }
-
-    .doddabetta {
-        background-image: url(./Assets/Tablets/Doddabetta_L1.jpg);
-        background-size: cover;
-    }
-
-    .monument-heading {
-        background-color: rgb(0, 214, 251);
-    }
-
-    .Monuments {
-        width: 100%;
-        height: 78vh;
-        padding: 1rem 0;
-        background-image: url(./Assets/Tablets/Taj_Mahal_L6.jpg);
-    }
-
-    .hero {
-        height: 50%;
-        overflow-y: auto;
-    }
-
-    .thumbnail-slider {
-        height: 45%;
-    }
-
-}
-
